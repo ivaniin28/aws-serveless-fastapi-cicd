@@ -52,7 +52,7 @@ jobs:
           zip -r9 ../../../../api.zip .
 
       - name: Add App to Zipfile
-        run: cd ./app && zip -g ../api.zip -r .
+        run: cd ./app && zip -g ../api.zip -r && ls -l ./api.zip .
 
       - name: Upload zip file artifact
         uses: actions/upload-artifact@v2
@@ -82,7 +82,7 @@ jobs:
           name: api
 
       - name: Upload to S3
-        run: aws s3 cp api.zip s3://testivanbucket2
+        run: aws s3 cp api.zip s3://testivanbucket2/api.zip
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
