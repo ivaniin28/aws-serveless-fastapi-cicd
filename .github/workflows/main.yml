@@ -53,9 +53,6 @@ jobs:
 
       - name: Add App to Zipfile
         run: cd ./app && zip -g ../api.zip -r .
-        
-      - name : Check directories
-        run: ls -l ./api.zip .
 
       - name: Upload zip file artifact
         uses: actions/upload-artifact@v2
