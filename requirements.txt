@@ -1,1 +1,7 @@
-
+mangum==0.10.0
+pytest==6.2.0
+uvicorn==0.13.1
+fastapi==0.62.0
+requests==2.25.0
+starlette==0.13.6
+py==1.10.0
