@@ -1,7 +1,5 @@
 fastapi==0.62.0
 mangum==0.10.0
-pydantic==1.7.3
 pytest==6.2.0
 requests==2.25.0
-starlette==0.13.6
 uvicorn==0.13.1
