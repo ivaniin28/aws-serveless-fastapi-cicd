@@ -1,2 +1,1 @@
-fastapi==0.62.0
 mangum==0.10.0
